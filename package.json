@@ -10,8 +10,26 @@
     "test": "jest"
   },
   "dependencies": {
+    "katex": "^0.16.10",
+    "markdown-it": "^14.1.0",
+    "markdown-it-math": "^4.1.1",
+    "markdown-it-mathjax3": "^4.3.2",
+    "markdown-it-texmath": "^1.0.0",
+    "mathpix-markdown-it": "^1.3.3",
     "react": "18.2.0",
-    "react-native": "0.73.6"
+    "react-markdown-math": "^1.0.2",
+    "react-native": "0.73.6",
+    "react-native-autoheight-webview": "^1.6.5",
+    "react-native-fast-image": "^8.6.3",
+    "react-native-latex": "^0.5.0",
+    "react-native-markdown-display": "^7.0.2",
+    "react-native-markdown-renderer": "^3.2.8",
+    "react-native-math-view": "^3.9.5",
+    "react-native-mathjax": "^2.1.2",
+    "react-native-mathjax-svg": "^0.9.9",
+    "react-native-render-html": "^6.3.4",
+    "react-native-svg": "^15.1.0",
+    "react-native-webview": "^13.8.4"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
@@ -21,6 +39,8 @@
     "@react-native/eslint-config": "0.73.2",
     "@react-native/metro-config": "0.73.5",
     "@react-native/typescript-config": "0.73.1",
+    "@types/katex": "^0.16.7",
+    "@types/markdown-it": "^13.0.7",
     "@types/react": "^18.2.6",
     "@types/react-test-renderer": "^18.0.0",
     "babel-jest": "^29.6.3",
