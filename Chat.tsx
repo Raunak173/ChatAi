@@ -1,8 +1,22 @@
 import {StyleSheet, View, useWindowDimensions} from 'react-native';
-import React from 'react';
+import React, {useState} from 'react';
 import WebView from 'react-native-webview';
 
 const Chat = ({item}: any) => {
+  // const [webViewHeight, setWebViewHeight] = useState(0);
+
+  // const injectedScript = `
+  //   (function() {
+  //     var height = document.documentElement.scrollHeight;
+  //     window.ReactNativeWebView.postMessage(JSON.stringify({ height: height }));
+  //   })();
+  // `;
+
+  // const handleWebViewMessage = (event: any) => {
+  //   const {height} = JSON.parse(event.nativeEvent.data);
+  //   setWebViewHeight(height);
+  // };
+
   const htmlContent = `
     <!DOCTYPE html>
     <html>
@@ -33,7 +47,8 @@ const Chat = ({item}: any) => {
           .replace(
             /\$\\frac{(\d+)}{(\d+)}\$/g,
             (match: any, p1: any, p2: any) => `${p1}/${p2}`,
-          )}
+          )
+          .replace('"_"', '-')}
       </p>
       <script>
         document.body.style.height = document.documentElement.scrollHeight + 'px';
@@ -50,6 +65,12 @@ const Chat = ({item}: any) => {
         source={{html: htmlContent}}
         javaScriptEnabled={true}
         domStorageEnabled={true}
+        // style={{
+        //   heght: webViewHeight,
+        //   width: '100%',
+        // }}
+        // injectedJavascript={injectedScript}
+        // onMessage={handleWebViewMessage}
       />
     </View>
   );
@@ -62,6 +83,7 @@ const styles = StyleSheet.create({
     marginVertical: 20,
     backgroundColor: '#fff',
     height: 300,
+    // height: 100,
     padding: 10,
     borderRadius: 20,
     alignSelf: 'flex-end',

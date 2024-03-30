@@ -1,38 +1,38 @@
 const data = [
   {
     chunk:
-      "Of course! I would be more than happy to break it down for you!\nLet's use a step-by-step approach.",
+      "Of course! I would be more than happy to break it down for you! \\ Let's use a step-by-step approach.",
     latex: false,
     guardrail: false,
   },
   {
     chunk:
-      "**Step 1: Calculation of the deal price based on Ragini's net earnings**\nRagini's net earnings are Rs 4.5 lacs, after paying a $10\\%$ broker commission. Therefore, the money Ragini received is $90\\%$ of the deal price. This is because the commission is subtracted from the total price ( $100\\%$ - $10\\%$ commission = $90\\%$ remaining). We can write this as an equation:\n\\[ \\text{Net Earnings} = \\text{Deal Price} \\times \\frac{90}{100} \\]\n\\[ 4.5 \\text{ lacs} = \\text{Deal Price} \\times \\frac{90}{100} \\]\nTo find the Deal Price, we would divide the net earnings of Rs 4.5 lacs by $90\\%$, or $\\frac{90}{100}$.",
+      "**Step 1: Calculation of the deal price based on Ragini's net earnings** \n Ragini's net earnings are Rs 4.5 lacs, after paying a $10\\%$ broker commission. Therefore, the money Ragini received is $90\\%$ of the deal price. This is because the commission is subtracted from the total price ( $100\\%$ - $10\\%$ commission = $90\\%$ remaining). We can write this as an equation: \n $$\\text{Net Earnings} = \\text{Deal Price} \\times \\frac{90}{100} $$ \n  $$4.5 \\text{ lacs} = \\text{Deal Price} \\times \\frac{90}{100} $$ \n To find the Deal Price, we would divide the net earnings of Rs 4.5 lacs by $90\\%$, or $\\frac{90}{100}$.",
     latex: true,
     guardrail: false,
   },
   {
     chunk:
-      '**Step 2: Calculate the exact deal price**\nWe find the deal price using the equation:',
+      '**Step 2: Calculate the exact deal price** \n We find the deal price using the equation:',
     latex: false,
     guardrail: false,
   },
   {
     chunk:
-      '\\[ \\text{Deal Price} = \\frac{4.5 \\text{ lacs}}{\\frac{90}{100}} \\]',
+      '$$ \\text{Deal Price} = \\frac{4.5 \\text{ lacs}}{\\frac{90}{100}} $$',
     latex: true,
     guardrail: false,
   },
   {chunk: 'which simplifies to:', latex: false, guardrail: false},
   {
     chunk:
-      '\\[ \\text{Deal Price} = 4.5 \\text{ lacs} \\times \\frac{100}{90} \\]',
+      '$$ \\text{Deal Price} = 4.5 \\text{ lacs} \\times \\frac{100}{90} $$',
     latex: true,
     guardrail: false,
   },
   {chunk: 'and gives the answer:', latex: false, guardrail: false},
   {
-    chunk: '\\[ \\text{Deal Price} = 5 \\text{ lacs} \\]',
+    chunk: '$$ \\text{Deal Price} = 5 \\text{ lacs} $$',
     latex: true,
     guardrail: false,
   },
@@ -44,13 +44,13 @@ const data = [
   },
   {
     chunk:
-      '**Step 3: Calculate the commission paid by Ramesh**\nRamesh also pays a $10\\%$ commission to the broker on top of the deal price. We represent this as:',
+      '**Step 3: Calculate the commission paid by Ramesh**\nRamesh also pays a $10\\%$  commission to the broker on top of the deal price. We represent this as:',
     latex: true,
     guardrail: false,
   },
   {
     chunk:
-      "\\[ \\text{Ramesh's Commission} = \\text{Deal Price} \\times \\frac{10}{100} \\]",
+      "$$ \\text{Ramesh's Commission} = \\text{Deal Price} \\times \\frac{10}{100} $$",
     latex: true,
     guardrail: false,
   },
@@ -61,13 +61,13 @@ const data = [
   },
   {
     chunk:
-      "\\[ \\text{Ramesh's Commission} = 5 \\text{ lacs} \\times \\frac{10}{100} \\]",
+      "$$ \\text{Ramesh's Commission} = 5 \\text{ lacs} \\times \\frac{10}{100} $$",
     latex: true,
     guardrail: false,
   },
   {chunk: 'which simplifies to:', latex: false, guardrail: false},
   {
-    chunk: "\\[ \\text{Ramesh's Commission} = 0.5 \\text{ lacs} \\]",
+    chunk: "$$ \\text{Ramesh's Commission} = 0.5 \\text{ lacs} $$",
     latex: true,
     guardrail: false,
   },
@@ -79,20 +79,20 @@ const data = [
   },
   {
     chunk:
-      "\\[ \\text{Total Amount Spent by Ramesh} = \\text{Deal Price} + \\text{Ramesh's Commission} \\]",
+      "$$ \\text{Total Amount Spent by Ramesh} = \\text{Deal Price} + \\text{Ramesh's Commission} $$",
     latex: true,
     guardrail: false,
   },
   {chunk: 'Which is:', latex: false, guardrail: false},
   {
     chunk:
-      '\\[ \\text{Total Amount Spent by Ramesh} = 5 \\text{ lacs} + 0.5 \\text{ lacs} \\]',
+      '$$ \\text{Total Amount Spent by Ramesh} = 5 \\text{ lacs} + 0.5 \\text{ lacs} $$',
     latex: true,
     guardrail: false,
   },
   {chunk: 'Therefore, ', latex: false, guardrail: false},
   {
-    chunk: '\\[ \\text{Total Amount Spent by Ramesh} = 5.5 \\text{ lacs} \\]',
+    chunk: '$$ \\text{Total Amount Spent by Ramesh} = 5.5 \\text{ lacs} $$',
     latex: true,
     guardrail: false,
   },
